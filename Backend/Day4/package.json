@@ -1,5 +1,5 @@
 {
-  "name": "day3",
+  "name": "day4",
   "version": "1.0.0",
   "description": "",
   "license": "ISC",
@@ -8,19 +8,20 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/index.js",
     "build": "tsc",
-    "dev": "concurrently \"tsc -w\" \"nodemon dist/index.ts\""
+    "start": "node dist/index.js",
+    "run": "concurrently \"tsc -w \" \"nodemon dist/index.ts\""
   },
   "dependencies": {
-    "@types/express": "^5.0.6",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/node": "^25.0.10",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.1.5"
   },
   "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/mongoose": "^5.11.96",
+    "@types/node": "^25.0.10",
     "concurrently": "^9.2.1",
     "nodemon": "^3.1.11"
   }
